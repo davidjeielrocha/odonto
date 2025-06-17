@@ -1,0 +1,374 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body { 
+    width: 100%;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #e8f3f7;
+    color: #000000;
+    overflow-x: hidden;
+    line-height: 1.6;   
+}
+
+.container {
+    width: 90%;
+    max-width: 14400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+header {
+    background-color: #96b9ceaf;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.logo a{
+    font-size: 30px;
+    font-weight: bold;
+    color: #bb8d18c5;
+    margin-bottom: 15px;
+    text-align: center;
+    display: block;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    margin: 0px;
+    font-size: 18px;
+}
+
+.menu li a{
+    color:#f5f5f5;
+    text-decoration: none; 
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    position: relative;
+    display: inline-block;
+}
+
+.menu li a:hover {
+    color: #3498db;
+    background-color: #f8f9fa;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+}
+
+/*sobre*/
+.quemsomos{ 
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.sobre {
+    font-weight: 400;
+}
+
+.sobre p{
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+/*servicos*/
+.servicos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.servico {
+    width: 250px;
+}
+
+.servico img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block; 
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.servico:hover img {
+    box-shadow: 0px 0px 5px 5px #d7e7f1;
+    transform: scale(1.05);
+
+}
+
+/*equipe medica*/
+.container-medicos{
+    flex-direction: column;
+}
+
+.equipe-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.medico {
+    width: 300px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.medico img{
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 80%;
+    margin: 0 auto 15px;
+    transition: transform 0.3s ease;
+}
+
+.medico h3{
+    margin-bottom: 0px;
+    font-family: Sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.medico p{
+    font-family: Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.medico:hover img {
+    box-shadow: 0px 0px 10px 8px #d7e7f1;
+    transform: scale(1.05);
+}
+
+/*depoimentos*/
+.depoimentos {
+    background-color: #f8fafb;
+    padding: 80px 0;
+}
+
+.depoimentos .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto;
+}
+
+.depoimentos .lista-depoimentos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.card h3{
+    font-weight:200;
+    font-size: 14px;
+    font-family: fantasy;
+}
+
+.depoimentos .card p{
+    font-weight: lighter;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+
+.depoimentos .card{ 
+    width: 30%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #c7e2f3;
+    transition: 0,3s;
+}
+
+.depoimentos .card .titulo{
+    margin: 13px 0;
+    font-weight: 600;
+}
+
+.depoimentos .card:hover{
+    box-shadow: 0px 0px 10px 4px #d7e7f1;
+}
+
+/*fale conosco*/
+#faleconosco{
+    background-color: rgb(204, 238, 241);
+    padding: 80px 0;
+}
+
+.box-faleconosco{
+    text-align: center;
+    padding:90px;
+    background-color: #f7e5d691;
+    border-radius: 60px;
+
+}
+
+.box-faleconosco h2{
+    font-size: 6,5rem;
+    font-weight: bold;
+}
+
+.box-faleconosco p{
+    margin-bottom: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+formulario {
+    display:grid;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#formulario input{
+    width: 80%;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    align-items: center;
+}
+
+#formulario textarea {
+    width: 80%;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    display:block;
+    align-items: center;
+}
+
+#formulario textarea {
+    height: 120px;
+    resize:both;
+}
+
+#formulario button {
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 14px;
+    color: #1b1500;
+    background-color:#f1dc95 ;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#formulario button:hover {
+    background: #a67b15;
+}
+
+
+/*wpp*/
+.whatsapp-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-decoration: none;
+    transition: background 0.3s ease;
+    z-index: 1000;
+}
+
+.whatsapp-link:hover {
+    background-color: #1ebe5b;
+}
+
+/*mapa*/
+.mapa iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+@media (min-width: 768) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo a{
+        justify-content: flex-end;
+    }
+
+    .depoimentos .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .depoimentos .card{
+        width: 50%;
+    }
+    .menu-toggle {
+    display: none; /* Só aparece em mobile */
+}
+
+    .menu-toggle {
+        display: block;
+    }
+    .menu {
+        display: none; 
+    }
+    .menu.active {
+        display: flex;
+    }
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
